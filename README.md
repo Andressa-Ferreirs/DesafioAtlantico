@@ -19,5 +19,9 @@ O projeto consiste na automação de um sistema web em java, uma agenda de conta
 
  - Java (linguagem de programação);
  - Selenium Webdriver;
- - Cucumber (linguagem Gerkin);
+ - Cucumber (Gherkin e BDD);
  - JUnit. 
+
+
+### Obs: 
+O Webdriver foi usado com o Firefox versão 47 passado com o caminho "\src\main\resources\webDrivers\geckodriver.exe".
