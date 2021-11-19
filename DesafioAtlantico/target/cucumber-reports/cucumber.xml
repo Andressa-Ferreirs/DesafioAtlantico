@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="49.435779">
+    <testcase classname="Fazer altera��es em agenda de contatos" name="Adicionar novo contato" time="20.713193">
+        <system-out><![CDATA[Dado que o usuario acesse o servico de agenda...............................passed
+Dado que o usuario clique no botao adicionar................................passed
+Quando adicionar novo contato...............................................passed
+Entao deve verificar que um novo contato foi adicionado na agenda...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Fazer altera��es em agenda de contatos" name="Adicionar contato existente" time="12.493046">
+        <system-out><![CDATA[Dado que o usuario acesse o servico de agenda...............................passed
+Dado que o usuario clique no botao adicionar................................passed
+Quando tentar inserir um contato ja existente...............................passed
+Entao o sistema retorna a mensagem "Pessoa j� existe."......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Fazer altera��es em agenda de contatos" name="Excluir contato" time="6.069354">
+        <system-out><![CDATA[Dado que o usuario acesse o servico de agenda...............................passed
+Dado que o usuario verifique que existe um contato da pagina inicial........passed
+Quando clicar no icone de excluir contato...................................passed
+Entao deve verificar que o contato foi excluido.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Fazer altera��es em agenda de contatos" name="Tentar adicionar novo contato sem a quantidade minima de caracteres no nome" time="10.160186">
+        <system-out><![CDATA[Dado que o usuario acesse o servico de agenda...............................passed
+Dado que o usuario clique no botao adicionar................................passed
+Quando eu adicionar um nome menor que a quantindade minima permitida........passed
+Entao o sistema retorna a mensagem "Insira um nome (min. length: 3)"........passed
+]]></system-out>
+    </testcase>
+</testsuite>

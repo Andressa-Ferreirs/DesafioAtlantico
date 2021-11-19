@@ -1,0 +1,426 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Acessar o servi�o de agenda",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 10775016600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que o usuario acesse o servico de agenda",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioAcesseOServicoDeAgenda()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 212100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeAllTests()"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Adicionar novo contato",
+        "description": "",
+        "id": "fazer-altera��es-em-agenda-de-contatos;adicionar-novo-contato",
+        "after": [
+          {
+            "result": {
+              "duration": 81800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterAllTests(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 308913900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que o usuario clique no botao adicionar",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioCliqueNoBotaoAdicionar()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6596619700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "adicionar novo contato",
+            "match": {
+              "location": "AgendaDeContatosStep.adicionarNovoContato()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 3032348900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "deve verificar que um novo contato foi adicionado na agenda",
+            "match": {
+              "location": "AgendaDeContatosStep.deveVerificarQueUmNovoContatoFoiAdicionadoNaAgenda()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 7,
+            "name": "@AdicionarContato"
+          },
+          {
+            "line": 7,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Acessar o servi�o de agenda",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 519679300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que o usuario acesse o servico de agenda",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioAcesseOServicoDeAgenda()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 44100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeAllTests()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Adicionar contato existente",
+        "description": "",
+        "id": "fazer-altera��es-em-agenda-de-contatos;adicionar-contato-existente",
+        "after": [
+          {
+            "result": {
+              "duration": 52200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterAllTests(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 128582800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "que o usuario clique no botao adicionar",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioCliqueNoBotaoAdicionar()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 6704782900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "tentar inserir um contato ja existente",
+            "match": {
+              "location": "AgendaDeContatosStep.tentarInserirUmContatoJaExistente()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5139904900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "o sistema retorna a mensagem \"Pessoa j� existe.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pessoa j� existe.",
+                  "offset": 30
+                }
+              ],
+              "location": "AgendaDeContatosStep.oSistemaRetornaAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@TentarAdicionarContatoJaExistente"
+          },
+          {
+            "line": 13,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Acessar o servi�o de agenda",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 588570300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que o usuario acesse o servico de agenda",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioAcesseOServicoDeAgenda()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 76700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeAllTests()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Excluir contato",
+        "description": "",
+        "id": "fazer-altera��es-em-agenda-de-contatos;excluir-contato",
+        "after": [
+          {
+            "result": {
+              "duration": 42000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterAllTests(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3038822100,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "que o usuario verifique que existe um contato da pagina inicial",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioVerifiqueQueExisteUmContatoDaPaginaInicial()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 181708500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clicar no icone de excluir contato",
+            "match": {
+              "location": "AgendaDeContatosStep.clicarNoIconeDeExcluirContato()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 2260134600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "deve verificar que o contato foi excluido",
+            "match": {
+              "location": "AgendaDeContatosStep.deveVerificarQueOContatoFoiExcluido()"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@ExcluirContato"
+          },
+          {
+            "line": 19,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Acessar o servi�o de agenda",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 448963300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "que o usuario acesse o servico de agenda",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioAcesseOServicoDeAgenda()"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 38000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.BeforeAllTests()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Tentar adicionar novo contato sem a quantidade minima de caracteres no nome",
+        "description": "",
+        "id": "fazer-altera��es-em-agenda-de-contatos;tentar-adicionar-novo-contato-sem-a-quantidade-minima-de-caracteres-no-nome",
+        "after": [
+          {
+            "result": {
+              "duration": 31000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.AfterAllTests(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116684400,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "que o usuario clique no botao adicionar",
+            "match": {
+              "location": "AgendaDeContatosStep.queOUsuarioCliqueNoBotaoAdicionar()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 4416976400,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "eu adicionar um nome menor que a quantindade minima permitida",
+            "match": {
+              "location": "AgendaDeContatosStep.euAdicionarUmNomeMenorQueAQuantindadeMinimaPermitida()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 5177492400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "o sistema retorna a mensagem \"Insira um nome (min. length: 3)\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Insira um nome (min. length: 3)",
+                  "offset": 30
+                }
+              ],
+              "location": "AgendaDeContatosStep.oSistemaRetornaAMensagem(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@TentarAdicionarContatoSemQuantidadeMinimaDeCaracteresNoNome"
+          },
+          {
+            "line": 25,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Fazer altera��es em agenda de contatos",
+    "description": "",
+    "id": "fazer-altera��es-em-agenda-de-contatos",
+    "keyword": "Funcionalidade",
+    "uri": "features/AgendaDeContatos.feature"
+  }
+]
